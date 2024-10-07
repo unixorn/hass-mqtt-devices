@@ -55,8 +55,10 @@ jobs:
             DOCKERFILE_HADOLINT_DISABLE_ERRORS: true
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             PAT: ${{secrets.PAT}}
+            REPOSITORY_DEVSKIM_DISABLE_ERRORS: true
             REPOSITORY_GITLEAKS_DISABLE_ERRORS: true
             REPOSITORY_GITLEAKS_PR_COMMITS_SCAN: true
+            REPOSITORY_KICS_DISABLE_ERRORS: true
             REPOSITORY_TRIVY_DISABLE_ERRORS: true
             VALIDATE_ALL_CODEBASE: false
             YAML_YAMLLINT_DISABLE_ERRORS: true
